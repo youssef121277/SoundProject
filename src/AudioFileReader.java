@@ -7,7 +7,7 @@
 import java.io.FileInputStream;         /* we needed to import class FileInputStream to read bytes by using its methods*/
 import java.io.IOException;   
 
-public class AudioFileReader {
+public class AudioFileReader { 
 
     public static void main(String[] args) {
         //  path to your audio file - (change as needed)
@@ -69,7 +69,7 @@ public class AudioFileReader {
             e.printStackTrace();
         }
     }
-    
+
 
     public static String detectFileType(byte[] h) {  
 
