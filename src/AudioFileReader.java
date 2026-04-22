@@ -1,11 +1,11 @@
 /* Audio File Reader Project using Java programing Language */
-/* This program reads an audio file and detects its type based on the file header */
+/* This program reads an audio file and detects its type based on the file header (Using Method "detectFileType()") */
 /* It supports WAV, MP3, OGG, FLAC, AAC, and WMA formats */
 /* It also displays the header in both hexadecimal and text formats */
 /* For WAV files, it extracts and displays the number of channels, sample rate, and bits per sample details */
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.FileInputStream;         /* we needed to import class FileInputStream to read bytes by using its methods*/
+import java.io.IOException;   
 
 public class AudioFileReader {
 
@@ -69,6 +69,7 @@ public class AudioFileReader {
             e.printStackTrace();
         }
     }
+    
 
     public static String detectFileType(byte[] h) {  
 
